@@ -3,7 +3,7 @@
 Core Catalog & Discovery
 
 - Browse catalog: categories, tags, sorting, and faceted navigation (multi-select filters). (alok,rishab)
-- Search: fast full-text search with suggestions, typo tolerance, synonyms, and saved queries. (alok)
+- Search: fast text search with suggestions, typo tolerance, synonyms, and saved queries. (alok)
 - recommendations: "You may also like", "Frequently bought", and related-product.New Arrivals (template)
 
 Product Experience
