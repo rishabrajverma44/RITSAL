@@ -101,34 +101,34 @@ const Header = () => {
         {/* Navigation - Desktop */}
         <nav className="hidden md:flex items-center gap-6 pb-3 border-t pt-3">
           <Link
-            to="/products?category=men"
+            to="/products?category=new-collection"
             className="text-sm font-medium hover:text-primary transition-colors">
-            Men
+            New Collection
           </Link>
           <Link
-            to="/products?category=women"
+            to="/products?category=trending"
             className="text-sm font-medium hover:text-primary transition-colors">
-            Women
+            Trending
           </Link>
           <Link
-            to="/products?category=kids"
+            to="/products?category=ethenic"
             className="text-sm font-medium hover:text-primary transition-colors">
-            Kids
+            Ethenic
           </Link>
           <Link
-            to="/products?category=accessories"
+            to="/products?category=modern"
             className="text-sm font-medium hover:text-primary transition-colors">
-            Accessories
+            Modern
           </Link>
           <Link
-            to="/products?sale=true"
+            to="/products?most-luxury=true"
             className="text-sm font-medium text-accent hover:text-accent/80 transition-colors">
-            Sale
+            Most Luxurious
           </Link>
           <Link
-            to="/products?new=true"
+            to="/products?combos=true"
             className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
-            New Arrivals
+            Combos
           </Link>
         </nav>
       </div>
