@@ -1,20 +1,20 @@
-import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, Sparkles, Zap } from "lucide-react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import ProductCard from "@/components/ProductCard";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import heroBanner from "@/assets/hero-banner.jpg";
-import product1 from "@/assets/product-1.jpg";
-import product2 from "@/assets/product-2.jpg";
-import product3 from "@/assets/product-3.jpg";
+import { Link } from 'react-router-dom';
+import { ArrowRight, TrendingUp, Sparkles, Zap } from 'lucide-react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import ProductCard from '@/components/ProductCard';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import heroBanner from '@/assets/hero-banner.jpg';
+import product1 from '@/assets/product-1.jpg';
+import product2 from '@/assets/product-2.jpg';
+import product3 from '@/assets/product-3.jpg';
 
 const Index = () => {
   const featuredProducts = [
     {
-      id: "1",
-      name: "Premium Cotton T-Shirt",
+      id: '1',
+      name: 'Premium Cotton T-Shirt',
       price: 799,
       originalPrice: 1499,
       image: product1,
@@ -24,8 +24,8 @@ const Index = () => {
       isNew: true,
     },
     {
-      id: "2",
-      name: "Classic Denim Jeans",
+      id: '2',
+      name: 'Classic Denim Jeans',
       price: 1999,
       originalPrice: 2999,
       image: product2,
@@ -34,8 +34,8 @@ const Index = () => {
       discount: 33,
     },
     {
-      id: "3",
-      name: "Casual Hoodie",
+      id: '3',
+      name: 'Casual Hoodie',
       price: 1299,
       originalPrice: 2199,
       image: product3,
@@ -45,8 +45,8 @@ const Index = () => {
       isNew: true,
     },
     {
-      id: "4",
-      name: "Elegant Dress Shirt",
+      id: '4',
+      name: 'Elegant Dress Shirt',
       price: 1499,
       originalPrice: 2499,
       image: product1,
@@ -57,37 +57,55 @@ const Index = () => {
   ];
 
   const categories = [
-    { name: "Men's Fashion", link: "/products?category=men", count: "2.5k+ items" },
-    { name: "Women's Fashion", link: "/products?category=women", count: "3.2k+ items" },
-    { name: "Kids' Fashion", link: "/products?category=kids", count: "1.8k+ items" },
-    { name: "Accessories", link: "/products?category=accessories", count: "850+ items" },
+    {
+      name: "Men's Fashion",
+      link: '/products?category=men',
+      count: '2.5k+ items',
+    },
+    {
+      name: "Women's Fashion",
+      link: '/products?category=women',
+      count: '3.2k+ items',
+    },
+    {
+      name: "Kids' Fashion",
+      link: '/products?category=kids',
+      count: '1.8k+ items',
+    },
+    {
+      name: 'Accessories',
+      link: '/products?category=accessories',
+      count: '850+ items',
+    },
   ];
 
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[600px] overflow-hidden">
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${heroBanner})` }}
-          >
+            style={{ backgroundImage: `url(${heroBanner})` }}>
             <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
           </div>
-          
+
           <div className="relative container mx-auto px-4 h-full flex items-center">
             <div className="max-w-2xl text-primary-foreground">
               <div className="flex items-center gap-2 mb-4">
                 <Sparkles className="h-6 w-6" />
-                <span className="text-sm font-semibold uppercase tracking-wider">New Season Collection</span>
+                <span className="text-sm font-semibold uppercase tracking-wider">
+                  New Season Collection
+                </span>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Elevate Your Style
               </h1>
               <p className="text-xl mb-8 text-primary-foreground/90">
-                Discover the latest trends in fashion. Up to 50% off on selected items. Limited time offer!
+                Discover the latest trends in fashion. Up to 50% off on selected
+                items. Limited time offer!
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/products">
@@ -97,7 +115,10 @@ const Index = () => {
                   </Button>
                 </Link>
                 <Link to="/products?sale=true">
-                  <Button variant="outline" size="xl" className="bg-background/10 backdrop-blur-sm text-primary-foreground border-primary-foreground hover:bg-background/20">
+                  <Button
+                    variant="outline"
+                    size="xl"
+                    className="bg-background/10 backdrop-blur-sm text-primary-foreground border-primary-foreground hover:bg-background/20">
                     View Deals
                   </Button>
                 </Link>
@@ -116,7 +137,9 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Fast Delivery</h3>
-                  <p className="text-sm text-muted-foreground">Get it in 2-3 days</p>
+                  <p className="text-sm text-muted-foreground">
+                    Get it in 2-3 days
+                  </p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -125,7 +148,9 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Easy Returns</h3>
-                  <p className="text-sm text-muted-foreground">30-day return policy</p>
+                  <p className="text-sm text-muted-foreground">
+                    30-day return policy
+                  </p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -134,7 +159,9 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Quality Assured</h3>
-                  <p className="text-sm text-muted-foreground">100% authentic products</p>
+                  <p className="text-sm text-muted-foreground">
+                    100% authentic products
+                  </p>
                 </div>
               </div>
             </div>
@@ -154,8 +181,12 @@ const Index = () => {
                         {category.name.charAt(0)}
                       </span>
                     </div>
-                    <h3 className="font-semibold text-lg mb-1">{category.name}</h3>
-                    <p className="text-sm text-muted-foreground">{category.count}</p>
+                    <h3 className="font-semibold text-lg mb-1">
+                      {category.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {category.count}
+                    </p>
                   </CardContent>
                 </Card>
               </Link>
@@ -191,7 +222,10 @@ const Index = () => {
               Get up to 50% off on selected items. Don't miss out!
             </p>
             <Link to="/products?sale=true">
-              <Button variant="hero" size="xl" className="bg-background text-foreground hover:bg-background/90">
+              <Button
+                variant="hero"
+                size="xl"
+                className="bg-background text-foreground hover:bg-background/90">
                 Shop Deals
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
