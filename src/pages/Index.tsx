@@ -56,25 +56,25 @@ const Index = () => {
     },
   ];
 
-  const categories = [
+  const collections = [
     {
-      name: "Men's Fashion",
-      link: '/products?category=men',
+      name: 'New Collection',
+      link: '/products?collection=new-collection',
       count: '2.5k+ items',
     },
     {
-      name: "Women's Fashion",
-      link: '/products?category=women',
+      name: 'Trending Collection',
+      link: '/products?collection=trending',
       count: '3.2k+ items',
     },
     {
-      name: "Kids' Fashion",
-      link: '/products?category=kids',
+      name: 'Ethenic Collection',
+      link: '/products?collection=ethenic',
       count: '1.8k+ items',
     },
     {
-      name: 'Accessories',
-      link: '/products?category=accessories',
+      name: 'Modern Collection',
+      link: '/products?collection=modern',
       count: '850+ items',
     },
   ];
@@ -168,24 +168,24 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Categories */}
+        {/* collections */}
         <section className="py-16 container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8">Shop by Category</h2>
+          <h2 className="text-3xl font-bold mb-8">Shop by Collections</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {categories.map((category) => (
-              <Link key={category.name} to={category.link}>
+            {collections.map((collection) => (
+              <Link key={collection.name} to={collection.link}>
                 <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
                   <CardContent className="p-6">
                     <div className="h-40 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform">
                       <span className="text-4xl font-bold text-primary/30 group-hover:text-primary/50 transition-colors">
-                        {category.name.charAt(0)}
+                        {collection.name.charAt(0)}
                       </span>
                     </div>
                     <h3 className="font-semibold text-lg mb-1">
-                      {category.name}
+                      {collection.name}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      {category.count}
+                      {collection.count}
                     </p>
                   </CardContent>
                 </Card>
