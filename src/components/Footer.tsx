@@ -13,7 +13,7 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">About RitSal</h3>
             <p className="text-sm text-muted-foreground mb-4">
               Your one-stop destination for trendy fashion at affordable prices.
-              Shop the latest styles for womens and kids jewellery.
+              Shop the latest styles for women's and kids' jewellery.{' '}
             </p>
             <div className="flex gap-3">
               <Button variant="ghost" size="icon" className="h-8 w-8">
