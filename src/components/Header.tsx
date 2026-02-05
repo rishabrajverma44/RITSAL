@@ -5,6 +5,7 @@ import { Input } from './ui/input';
 import { useState } from 'react';
 import { useCart } from '@/contexts/CartContext';
 import { useWishlist } from '@/contexts/WishlistContext';
+import logo from '../assets/logo.jpg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,13 +25,11 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
         {/* Top Bar */}
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-2">
           {/* Logo */}
-          <Link
-            to="/"
-            className="flex items-center justify-center text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            <img src="/logo.jpg" alt="logo" className="h-12 w-auto mr-2" />
-            RitSal
+          <Link to="/" className="">
+            <img src={logo} alt="logo" className="h-10 w-auto ml-1" />
+            <p className="logo-text">RitSal</p>
           </Link>
 
           {/* Search Bar - Desktop */}
@@ -101,22 +100,22 @@ const Header = () => {
         {/* Navigation - Desktop */}
         <nav className="hidden md:flex items-center gap-6 pb-3 border-t pt-3">
           <Link
-            to="/products?category=new-collection"
+            to="/products?collection=new-collection"
             className="text-sm font-medium hover:text-primary transition-colors">
             New Collection
           </Link>
           <Link
-            to="/products?category=trending"
+            to="/products?collection=trending"
             className="text-sm font-medium hover:text-primary transition-colors">
             Trending
           </Link>
           <Link
-            to="/products?category=ethenic"
+            to="/products?collection=ethnic"
             className="text-sm font-medium hover:text-primary transition-colors">
-            Ethenic
-          </Link>
+            Ethnic
+          </Link>{' '}
           <Link
-            to="/products?category=modern"
+            to="/products?collection=modern"
             className="text-sm font-medium hover:text-primary transition-colors">
             Modern
           </Link>

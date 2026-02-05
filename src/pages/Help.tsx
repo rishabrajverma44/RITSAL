@@ -1,49 +1,49 @@
-import { MessageCircle, Mail, Phone } from "lucide-react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { MessageCircle, Mail, Phone } from 'lucide-react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
+} from '@/components/ui/accordion';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
 
 const Help = () => {
   const faqs = [
     {
-      question: "How do I track my order?",
+      question: 'How do I track my order?',
       answer:
         "You can track your order by going to 'My Orders' in your profile or using the tracking link sent to your email after shipment.",
     },
     {
-      question: "What is your return policy?",
+      question: 'What is your return policy?',
       answer:
-        "We offer easy returns within 7 days of delivery. The product must be unused with all tags intact. Visit our Return Policy page for details.",
+        'We offer easy returns within 7 days of delivery. The product must be unused with all tags intact. Visit our Return Policy page for details.',
     },
     {
-      question: "How long does delivery take?",
+      question: 'How long does delivery take?',
       answer:
         "Delivery typically takes 3-7 business days depending on your location. You'll receive an estimated delivery date at checkout.",
     },
     {
-      question: "What payment methods do you accept?",
+      question: 'What payment methods do you accept?',
       answer:
-        "We accept Credit/Debit Cards, UPI, Net Banking, and Cash on Delivery (COD) for eligible orders.",
+        'We accept Credit/Debit Cards, UPI, Net Banking, and Cash on Delivery (COD) for eligible orders.',
     },
     {
-      question: "How do I cancel my order?",
+      question: 'How do I cancel my order?',
       answer:
         "You can cancel your order from 'My Orders' section before it's shipped. Once shipped, you can return it after delivery.",
     },
     {
-      question: "Are there any hidden charges?",
+      question: 'Are there any hidden charges?',
       answer:
-        "No, the price you see at checkout is the final price. Delivery is free on orders above ₹999.",
+        'No, the price you see at checkout is the final price. Delivery is free on orders above ₹999.',
     },
   ];
 
@@ -133,7 +133,7 @@ const Help = () => {
                   <div>
                     <p className="font-semibold">Email</p>
                     <p className="text-sm text-muted-foreground">
-                      support@stylehub.com
+                      support@RitSal.com
                     </p>
                     <p className="text-sm text-muted-foreground">
                       We'll respond within 24 hours
